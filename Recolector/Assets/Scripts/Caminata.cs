@@ -37,7 +37,7 @@ public class Caminata : MonoBehaviour {
     {
         prota.velocity = new Vector2(direccionx, prota.velocity.y);
     }
-    
+
     void Flip()
     {
         caminandoDerecha = !caminandoDerecha;
