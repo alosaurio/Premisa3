@@ -28,7 +28,7 @@ public class Caminata : MonoBehaviour {
 
         if (gameManager.GameOver == true)
         {
-            mover = false;
+            mover = false;  
         }
         
         if (mover)
