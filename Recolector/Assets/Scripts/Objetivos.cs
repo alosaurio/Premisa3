@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Objetivos : MonoBehaviour
 {
+    public Caminata caminata;
     public GameManager gameManager;
     public int puntos;
 
@@ -14,6 +15,7 @@ public class Objetivos : MonoBehaviour
     void Start()
     {
         gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
+        caminata = GameObject.Find("Protagonista").GetComponent<Caminata>();
         transform.position = PosicionRandom();
     }
 

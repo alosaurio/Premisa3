@@ -41,6 +41,14 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public bool GameOver
+    {
+        get 
+        {
+            return gameOver;
+        }
+    }
+
     public void ActualizaTexto(int puntosParaAgregar)
     {
         puntos += puntosParaAgregar;
@@ -49,5 +57,10 @@ public class GameManager : MonoBehaviour
     public void ObjetivoPerdidos()
     {
         objetivoPerdidos++;
+
+        if (objetivoPerdidos == 3)
+        {
+            gameOver = true;
+        }
     }
 }
